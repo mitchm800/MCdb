@@ -11,4 +11,3 @@ namespace MotorCycleDB.Models
         public decimal Displacement { get; set; }
     }
 }
-}

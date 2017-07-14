@@ -1,7 +1,17 @@
-﻿
+﻿@model MotorCycleDB.Models.Motorcycle[]
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    @foreach (var motorcycle in Model)
+    {
+        <div class="col-md-3">
+            <h4>@Html.ActionLink(motorcycle.DisplayBike, "Detail", new { id = motorcycle.Id })</h4>
+        </div>
+    }
+</div>

@@ -11,4 +11,3 @@ namespace MotorCycleDB.Models
         //public string Role { get; set; }
     }
 }
-}
