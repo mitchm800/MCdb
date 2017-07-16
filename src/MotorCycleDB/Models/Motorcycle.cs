@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace MotorCycleDB.Models
 {
@@ -21,6 +22,11 @@ namespace MotorCycleDB.Models
         public string GetDisplayBike()
         {
             return ModelYear + " " + ModelId;
+        }
+
+        public class MotorcycleDBContext : DbContext
+        {
+            public DbSet<Motorcycle> Motorcycles { get; set; }
         }
 
         //public string BikeImage
