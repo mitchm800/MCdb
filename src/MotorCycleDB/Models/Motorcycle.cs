@@ -8,6 +8,7 @@ namespace MotorCycleDB.Models
 {
     public class Motorcycle
     {
+        // Set up properties for Motorcycles
         public int Id { get; set; }
         public string Mfg { get; set; }
         public string ModelId { get; set; }
@@ -19,11 +20,12 @@ namespace MotorCycleDB.Models
         public string Style { get; set; }
         public string Description { get; set; }
 
-        public string GetDisplayBike()
-        {
-            return ModelYear + " " + ModelId;
-        }
+        //public string GetDisplayBike()
+        //{
+        //    return ModelYear + " " + ModelId;
+        //}
 
+            // Add DB context class for communication with database
         public class MotorcycleDBContext : DbContext
         {
             public DbSet<Motorcycle> Motorcycles { get; set; }
