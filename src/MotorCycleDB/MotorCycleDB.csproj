@@ -149,6 +149,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MCDBController.cs" />
+    <Compile Include="Controllers\MotorcycleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +158,7 @@
     <Compile Include="Models\Mfg.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Motorcycle.cs" />
+    <Compile Include="Models\MotorCycleDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +204,11 @@
     <Content Include="Views\Entries\Index.cshtml" />
     <Content Include="Views\MCDB\MotorcycleList.cshtml" />
     <Content Include="Views\MCDB\Index.cshtml" />
+    <Content Include="Views\Motorcycle\Create.cshtml" />
+    <Content Include="Views\Motorcycle\Delete.cshtml" />
+    <Content Include="Views\Motorcycle\Details.cshtml" />
+    <Content Include="Views\Motorcycle\Edit.cshtml" />
+    <Content Include="Views\Motorcycle\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
