@@ -44,7 +44,7 @@
 @foreach (var item in Model)
 {
 
-        <tr onclick=@Html.ActionLink("Details", "Details",new { id = item.Id })>
+        <tr onclick="window.location='@Url.Action("Details", new { id = item.Id })';">
 
             <td>
                 @Html.DisplayFor(modelItem => item.Mfg)
