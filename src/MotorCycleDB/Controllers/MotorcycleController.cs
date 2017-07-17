@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MotorCycleDB.Models;
+using MotorCycleDB.Data;
 
 namespace MotorCycleDB.Controllers
 {

@@ -43,7 +43,7 @@
 
 @foreach (var item in Model)
 {
-
+        // Uses Url.Action to pass a route ti the window.location.  Makes each row in the list a link to the details page.
         <tr onclick="window.location='@Url.Action("Details", new { id = item.Id })';">
 
             <td>

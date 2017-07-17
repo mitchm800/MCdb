@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace MotorCycleDB.Models
+namespace MotorCycleDB.Data
 {
     public class MotorCycleDBContext : DbContext
     {
@@ -21,4 +21,6 @@ namespace MotorCycleDB.Models
 
         public System.Data.Entity.DbSet<MotorCycleDB.Models.Motorcycle> Motorcycles { get; set; }
     }
+
+
 }

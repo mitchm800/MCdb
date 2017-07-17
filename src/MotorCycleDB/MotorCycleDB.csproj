@@ -153,12 +153,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Chassis.cs" />
     <Compile Include="Models\Engine.cs" />
     <Compile Include="Models\Mfg.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Motorcycle.cs" />
-    <Compile Include="Models\MotorCycleDBContext.cs" />
+    <Compile Include="Data\MotorCycleDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
