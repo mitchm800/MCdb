@@ -12,7 +12,7 @@ namespace MotorCycleDB
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            // Route for viewing MCDB home page
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Motorcycle Database</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css") 
+    @Styles.Render("~/Content/Site.css")<!-- Added directive to use additional styling-->
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -20,9 +21,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                   <!---- <li>@Html.ActionLink("Home", "Index", "MCDB")</li> -->
                     <li>@Html.ActionLink("MC List", "Index", "Motorcycle")</li>
-                  <!----  <li>@Html.ActionLink("Contact", "Contact", "MCDB")</li> -->
                 </ul>
             </div>
         </div>

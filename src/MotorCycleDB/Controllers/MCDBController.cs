@@ -15,10 +15,10 @@ namespace MotorCycleDB.Controllers
         }
 
 
-        // Directs the browser to the "Motorcycle List" page
-        public ActionResult MotorcycleList()
-        {
-            return View();
-        }
+        //// Directs the browser to the "Motorcycle List" page
+        //public ActionResult MotorcycleList()
+        //{
+        //    return View();
+        //}
     }
 }

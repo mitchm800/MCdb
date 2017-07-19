@@ -23,10 +23,10 @@ namespace MotorCycleDB.Models
      
 
             // Add DB context class for communication with database
-        public class MotorcycleDBContext : DbContext
-        {
-            public DbSet<Motorcycle> Motorcycles { get; set; }
-        }
+        //public class MotorcycleDBContext : DbContext
+        //{
+        //    public DbSet<Motorcycle> Motorcycles { get; set; }
+        //}
 
     }
 }

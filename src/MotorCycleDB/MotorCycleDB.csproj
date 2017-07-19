@@ -201,7 +201,6 @@
     <Content Include="Views\Motorcycle\Details.cshtml" />
     <Content Include="Views\Motorcycle\Edit.cshtml" />
     <Content Include="Views\Motorcycle\Index.cshtml" />
-    <Content Include="Views\MCDB\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

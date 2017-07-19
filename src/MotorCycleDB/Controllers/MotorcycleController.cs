@@ -9,19 +9,21 @@ using System.Web.Mvc;
 using MotorCycleDB.Models;
 using MotorCycleDB.Data;
 
+// Motorcycle Controller class.  Directs the app to the Create, Edit, Delete, Details, and Index (MC list) views.
+
 namespace MotorCycleDB.Controllers
 {
     public class MotorcycleController : Controller
     {
         private MotorCycleDBContext db = new MotorCycleDBContext();
 
-        // GET: Motorcycle
+        // Displays list of all Motorcycles in database
         public ActionResult Index()
         {
             return View(db.Motorcycles.ToList());
         }
 
-        // GET: Motorcycle/Details/5
+        // Displays detail page of selected motorcycle
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -36,15 +38,13 @@ namespace MotorCycleDB.Controllers
             return View(motorcycle);
         }
 
-        // GET: Motorcycle/Create
+        // Displays the Create motorcycle form
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Motorcycle/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        //Create new motorcycle entry
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Mfg,ModelId,ModelYear,Engine,Horsepower,Torque,Weight,Style,Description")] Motorcycle motorcycle)
@@ -59,7 +59,7 @@ namespace MotorCycleDB.Controllers
             return View(motorcycle);
         }
 
-        // GET: Motorcycle/Edit/5
+        // returns edit view for selected motorcycle
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -74,9 +74,7 @@ namespace MotorCycleDB.Controllers
             return View(motorcycle);
         }
 
-        // POST: Motorcycle/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Saves changes to motorcycle record
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Mfg,ModelId,ModelYear,Engine,Horsepower,Torque,Weight,Style,Description")] Motorcycle motorcycle)
@@ -90,7 +88,7 @@ namespace MotorCycleDB.Controllers
             return View(motorcycle);
         }
 
-        // GET: Motorcycle/Delete/5
+        // Pulls up the Delete view
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -105,7 +103,8 @@ namespace MotorCycleDB.Controllers
             return View(motorcycle);
         }
 
-        // POST: Motorcycle/Delete/5
+        // Actually deletes the Motorcycle record from the database
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

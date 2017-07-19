@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    /*change text color for page*/
+    color: darkblue;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,6 +25,11 @@ textarea {
     max-width: 280px;
 }
 
+/*change background color of navbar and center the footer */
 .navbar {
-    background-color: aqua;
+    background-color: darkblue;
+}
+
+footer {
+    text-align: center;
 }
