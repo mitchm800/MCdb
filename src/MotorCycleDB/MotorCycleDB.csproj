@@ -147,7 +147,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MCDBController.cs" />
     <Compile Include="Controllers\MotorcycleController.cs" />
     <Compile Include="Global.asax.cs">
@@ -196,19 +195,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Entries\Add.cshtml" />
-    <Content Include="Views\Entries\Edit.cshtml" />
-    <Content Include="Views\Entries\Delete.cshtml" />
-    <Content Include="Views\Entries\Index.cshtml" />
     <Content Include="Views\MCDB\Index.cshtml" />
     <Content Include="Views\Motorcycle\Create.cshtml" />
     <Content Include="Views\Motorcycle\Delete.cshtml" />
     <Content Include="Views\Motorcycle\Details.cshtml" />
     <Content Include="Views\Motorcycle\Edit.cshtml" />
     <Content Include="Views\Motorcycle\Index.cshtml" />
+    <Content Include="Views\MCDB\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
