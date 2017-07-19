@@ -13,6 +13,7 @@ namespace MotorCycleDB.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
+        // Seed method to populate database with some records.
         protected override void Seed(MotorCycleDB.Data.MotorCycleDBContext context)
         {
             context.Motorcycles.AddOrUpdate(

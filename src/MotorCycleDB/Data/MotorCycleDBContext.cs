@@ -10,11 +10,6 @@ namespace MotorCycleDB.Data
     public class MotorCycleDBContext : DbContext
     {
 
-        //public MotorCycleDBContext()
-        //{
-        //    Database.SetInitializer(new DropCreateDatabaseAlways<MotorCycleDBContext>());
-        //    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MotorCycleDBContext>());
-        //}
 
         public MotorCycleDBContext() : base("name=MotorCycleDBContext")
         {
