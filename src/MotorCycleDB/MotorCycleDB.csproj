@@ -162,6 +162,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MotorCycleDBContext-20170716164843.mdf" />
+    <Content Include="App_Data\MotorCycleDBContext-20170716164843_log.ldf">
+      <DependentUpon>MotorCycleDBContext-20170716164843.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -202,9 +206,7 @@
     <Content Include="Views\Motorcycle\Edit.cshtml" />
     <Content Include="Views\Motorcycle\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
