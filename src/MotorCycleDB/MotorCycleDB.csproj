@@ -154,10 +154,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Chassis.cs" />
-    <Compile Include="Models\Engine.cs" />
-    <Compile Include="Models\Mfg.cs" />
-    <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Motorcycle.cs" />
     <Compile Include="Data\MotorCycleDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,7 +199,6 @@
     <Content Include="Views\Entries\Edit.cshtml" />
     <Content Include="Views\Entries\Delete.cshtml" />
     <Content Include="Views\Entries\Index.cshtml" />
-    <Content Include="Views\MCDB\MotorcycleList.cshtml" />
     <Content Include="Views\MCDB\Index.cshtml" />
     <Content Include="Views\Motorcycle\Create.cshtml" />
     <Content Include="Views\Motorcycle\Delete.cshtml" />
