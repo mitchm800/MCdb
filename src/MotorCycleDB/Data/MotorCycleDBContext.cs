@@ -14,9 +14,16 @@ namespace MotorCycleDB.Data
         // automatically whenever you change your model schema, please use data migrations.
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
-    
+
+        //public MotorCycleDBContext()
+        //{
+        //    Database.SetInitializer(new DropCreateDatabaseAlways<MotorCycleDBContext>());
+        //    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MotorCycleDBContext>());
+        //}
+
         public MotorCycleDBContext() : base("name=MotorCycleDBContext")
         {
+            
         }
 
         public System.Data.Entity.DbSet<MotorCycleDB.Models.Motorcycle> Motorcycles { get; set; }
